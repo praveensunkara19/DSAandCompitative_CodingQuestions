@@ -1,0 +1,9 @@
+Data Structures and Algorithms:
+
+Arrays:
+
+kth smallest element in an array.(brutforce), (Optimal[Hashing] - O(nlog(n)))
+
+ArrayList:
+
+* sorting the array with respective to frequency using maps.

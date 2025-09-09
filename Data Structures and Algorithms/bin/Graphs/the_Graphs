@@ -1,0 +1,140 @@
+for a fully connected graph there will be a V vertices and E Edges(V+1).
+
+for any adjacency list(ArrayList) the TC = O(2E)
+
+Brute Force Approches:
+	BFS: undirected
+		SC = Queue(O(N)) + Visit(O(N)) + bfs_result (O(N)) = O(3*O(N)) ~= O(N)
+		TC = O(N) + O(2E)
+		
+		Directed: TC = V + E
+	DFS: undirected
+		SC = Queue(O(N)) + Visit(O(N)) + bfs_result (O(N)) = O(3*O(N)) ~= O(N)
+		TC = O(N) + O(2E)
+
+
+Shortest Distance:
+Dijkstras algorithm:
+ * can be implemented by mainly Priority Queues, Sets(efficient)
+ * also can implement by queues but it takes more time to compute.
+ * dijkstras doesn't work for negative weighted graphs.(it falls in infinite loop)
+ 
+ Time complexity: E * log(V) 
+	 				 E - total no.of Edges
+	 				 V - no.of Vertices
+ 
+	using sets:
+	-it stores unique values,smallest at top(acending order)
+	
+BellMan Ford Algorithm:
+	*find the shortest path form sorce node
+	*Use for graph which has negative values & Directed graph
+	*iterating over V-1 gives the shortest path, and avoid fall into infinite loop inorder to find shortest path.
+	*Edges in the give graph in any order(so, we can iterate over the edges)
+	*Helps you detect negative cycle(dist<0)
+	
+Time Complexity: V * E
+
+Floyed Warshall Algorithm:
+ *used to find the shortest path to all the nodes
+ *also used for negative weighted graphs
+ 
+ TC: O(n^3)
+ SC: O(N^2) we using the given matrix and doing calculation
+	
+Minimum Spanning Tree:
+ - Prims algorithm:
+ 	*greedy intuition 
+ 	*used to determine the mst weight and its edges.
+ 	TC: O(ElogE)
+ 	SC: O(E)
+ 	
+ - Krushkals algorithm
+ 	(disjoint union)-TC:O(4*alpha)
+ 	*used to determine the mst weight and its edges.
+ 	
+ 	TC:O(4*alpha)
+ 	SC = O(V)
+ 	
+	
+problems:
+	
+ 1. no.of Provinces:
+ 	SC = O(N)[visited Array] + O(N)[recursion stack space]
+ 	TC = O(N) + O(V+2E) ~= O(N)
+ 	
+ 2. no.of IsLands
+ 
+ 3. FloodFillAlgorithm
+ 	SC= O(N*M) + o(N*M) (ans[][] + stack Space for DFS)
+ 	TC = O(N*M) + O((N*M)4)) ( image[][] + neighboring nodes)
+ 	
+ 3. Rotten Oranges
+ 
+ 
+ 4.DetectCycleUndirectedGraph
+ 	adjacent = E degree = 2E
+ 	TC: O(N + 2E) + O(N) for every node we again visiting it s adjacency nodes
+ 	SC: O(N) + O(N)
+ 	
+ 5.DetectCycleDirectedGraphDFS
+ 	* used extra pathVis Array, try with without it
+ 	TC= V+E
+ 	SC= 2N(for visit,pathVis)
+ 	
+	DetecCycleDirectedGraph(BFS)-kahn's algo apprch
+	TC = V+E
+	SC = N(indig)
+	
+6.Topological sort
+	uses for Directed Acyclic Graphs(DAG)
+	TC = V+E (dfs)
+	Sc = O(N) + O(N) [ans + stack]
+	
+	using BFS(kahn's algo): using indegre [] , always contain indegre-0 nodes in DAG
+	TC = V+E
+	SC = 2N( indig, ans ) + queue 
+	
+	/* for directed graph
+		 * for adjacency matrix (int[][] edges) --> adjacency list
+		 * for(int[] edge:edges){
+		 * 	adj.get(edge[0]).add(edge[1]);
+		 * }
+		 */
+		 
+7.SortestpathDAGusingTopo
+	along with the dfs for toposort and we take the dist[] to measure the shortest distance
+	
+	ShortestPathUndirectedGraph
+	along with the bfs we take the dist[] to    the shortest distance
+
+8.ShortestPathNode:
+	here we find only the path form the src to destination
+	we use parent[] to track the path of each node(like where it coming from)
+	Every time the dist[] updated we update the parent accordingly.
+	
+9.ShortestDistBinaryMaze
+
+10.FindingProvincesKrushkal
+11.MergeAccounts
+12.No.ofIsland (UnionSet)
+
+13.Kosaraju's Algorithm
+	1.sort the edges according to starting time(toposort)
+	2.reverse the each edge of the node.
+	3.do the dfs then count strongly connected components(scc).
+	
+	TC:O(V+E)
+	SC:(V)
+
+14.Tarjan's algorithm - Bridges in Graphs
+	 
+	
+
+
+
+
+
+
+
+  

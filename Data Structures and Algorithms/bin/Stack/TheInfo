@@ -1,0 +1,28 @@
+
+
+
+1.InfinixToPostFix using Stack
+	SC : O(N) for stack space + O(N) for ans variable.
+	TC : O(N) for n items to iterate O(N) for while loop if condition satisfies. ~= O(N)
+	
+2.InfinixToPrefix using stack:
+	SC : Stack space (O(N)) + storing the reverse str(O(N)) + for resulting string. 
+	Tc : reversing the string O(N), converting to postfix O(N), and reversing the result O(N) ~= o(N)
+	
+3.PostfixToInfix:
+	SC: for stack space O(N) 
+	TC: O(N) + O(N) for loop and addition of all elements
+
+	** for connecting 2 strings s1 + s2 the TC = n1 + n2 (lengths of the string)
+4.PostfixToInfix: 
+	SC: for stack space O(N) 
+	TC: O(N) + O(N) for loop and addition of all elements
+
+5. PostfixToPrefix:
+	SC: for stack space O(N) 
+	TC: O(N) + O(N) for loop and addition of all elements
+
+6. PrefixToPostfix:
+	SC: for stack space O(N) 
+	TC: O(N) + O(N) for loop and addition of all elements
+

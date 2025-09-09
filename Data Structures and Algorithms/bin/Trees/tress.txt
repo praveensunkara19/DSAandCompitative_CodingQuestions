@@ -1,0 +1,26 @@
+Binary Tree:
+
+
+
+Building a Binary Search tree!
+
+Step-1:
+
+where it contains the root node smaller value to the left, and 
+larger value to the right...
+
+Step-2:
+
+to print the values we need to traversal the tree in three ways:
+
+1.Inorder(left,root,right)
+2.Preorder(root,left,right)
+3.Postorder(left,right,root)
+
+LevelOrder:
+
+pass the root value to the queue and checkes and add its left and right node to the queue then,
+the root node is added to the list.
+
+
+ 

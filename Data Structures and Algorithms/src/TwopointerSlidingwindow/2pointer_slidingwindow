@@ -1,0 +1,40 @@
+Two pointer approches/ Siding window are the constructive approches.
+	change accoding to problems.
+patterns:
+		/brute force
+		/better 
+		/optimal
+	1.contant window
+		* brute force O(N*K)
+		* Sliding window O(N)
+	2.Longest subArray/subString where <condition>
+	3.no.of subArrays where <condition>
+	4.Shortest/minimum window <condition>
+	
+	
+	
+1.Maximum points from cards.
+	TC: O(K)
+	SC: O(1)
+2.LongestSubStringWithoutRepeatingcharacter
+	TC: O(N)
+	SC: O(256);
+3.MaxConsecutiveOnes:
+	longest subarray at most k zeros
+	TC:O(N)
+4.max Fruits in to k basket of same type in each basket
+	TC: O(N)
+	SC: O(K)
+5.NoOfSubStringsContainingAllCharacters
+
+6.LongestRepeatingCharacterReplacement
+	TC: O(N)
+	SC: O(K)
+7.BinarySubArraywithKsum & BinarySubArraywithKII
+
+8.SubarrayWithKDifferentIntegers
+
+	
+	
+	
+	

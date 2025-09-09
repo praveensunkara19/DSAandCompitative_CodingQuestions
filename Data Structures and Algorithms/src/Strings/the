@@ -1,0 +1,20 @@
+Strings:	
+strored in heap(string obj) or String constant pool(scp)
+immutable
+Synchronization( multiple threads can access the string obj simultaniouly) 
+Thread-safe
+Less Efficient
+
+StringBuffer:	
+mutable
+Heap
+Synchronization( multiple threads can access the string obj simultaniouly) 
+Thread-safe
+Efficient
+
+StringBuilder:	
+mutable
+Heap
+non-synchornize (multiple threads can accesst the obj but not simultaniously.
+non-Thread safe
+more Efficient

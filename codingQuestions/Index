@@ -1,0 +1,41 @@
+1) Qsn1:
+create an array of 5 float and find their sum.
+
+2)Qsn2:
+write a programme to find out wheather a given elemtn/integer  present in 
+an array or not.
+
+Data Structures 
+								--- Hackerrank ---
+3)Repeated string 
+  count the repeated char in the infinite string  
+  
+4)The Utopian tree goes through 2 cycles of growth every year. 
+	each spring it doubles it height, each summer it height increases by 1 meter.
+	
+	laura plants a utopina tree sapling with a height of 1 meter onset of spring. How tall will her
+	tree be after n growth cycles.
+	period   height
+	0			1
+	1			2
+	2 			3
+	4			6
+	5			7
+	
+5)SparseArray
+  There is collection of input string and collection of querry string. For each query string determine 
+  how many times it occured in the list of input arrays.
+  For example given input string = ['ab','ab','abc'] and query  = ['ab','abc','bc']. we find 2 of 'ab' ,
+  1 instance of 'abc', and 0 instances of 'bc'. For each querry we add an element to our return array.
+  result [2,1,0].
+  Tip: use preprocessing for input string then compare with querry to save time.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

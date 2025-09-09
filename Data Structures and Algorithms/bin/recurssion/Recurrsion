@@ -1,0 +1,13 @@
+Fibanacci series
+ 
+1.iterative, Time Complexity: O(N) 
+			 Auxiliary Space: O(1)
+			 
+2.recurrsion,	Time Complexity: O(2^N)  
+				Auxiliary Space: O(n)
+				
+Linear recursive search - Fibanacci [f(n) = f(n-1)+f(n-2)]
+Devide and conquer = Binary search 	[ f(n) = f(n) +f(n/2)]			
+
+
+

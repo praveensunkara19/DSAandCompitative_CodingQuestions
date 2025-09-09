@@ -1,0 +1,50 @@
+*
+ * updated version of mergesort
+ * time complexityy = n(logn)^2
+ */
+
+
+public class BitinicSeq {
+
+	
+	void sort(int arr[],int l,int h) {
+		if(l<h) {
+			int mid = l-(h-l)/2;   //divide and conqour method
+			
+			sort(arr,l,mid);
+			sort(arr,mid+1,h);   //TC: logn
+			
+			merge(arr,l,m,h);    //O(n)
+		}
+	}
+	void BitonicSeqence(int arr[],int l,int h,int order) {
+		if(h>1) {
+			int m = h/2;
+		}
+		BitonicSeqence(arr,l,m,0);  //TC: logn
+		BitonicSeqence(arr,l+m,1);
+		
+		BitonicSort(arr,l,h,order);  //nlogn
+	}
+	void BitonicSort(int arr,int l,int h, int order) {
+		
+		for(int i=l,i<l+m,i++) {
+			
+			if(arr[i]>arr[i+m]&& order ==0) || (arr[i]<arr[i+m] && order==1){
+				int temp = arr[i];
+				arr[i] = arr[i+m];
+				arr[i+m] == temp;
+			}
+		}
+		BitonicSort(arr,i,m,order);
+		BitonicSort(arr,l+m,m,order);
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+for heapify time complexity - log(N)
+fo n items in a list it takes - N
+
+time complexity = NlogN
+space complexity = logN
+
+it should be a complete binary tree adding(form left to right) or deletion should happen 
+in order.
+
+Queues can be implemented using the priorityqueue
+
+
+insert/add array + build heap(O(N)) + heapify(log(N)) + remove element(root)-copy the least leaf element to the root(swap)& n-1 + heapify  

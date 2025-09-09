@@ -1,0 +1,37 @@
+******Searching Algorithms*******
+
+1.Linear Search - O(n)
+2.Bilinear Search - O(log(n))
+3.Bilinear Search (Recursive func)
+
+*****Sorting Algorithms*****
+
+1.Bubble sort O(n^2)
+2.Selection sort O(n^2)
+3.Insertion sort O(n^2)
+
+4.Quick sort [best case O(nlog(n)), worst case O(long(n^2))
+
+5.Mergesort - O(nlog(n))
+ 
+ 
+ *****Stack*****
+ Stack is the Abstract data type(ADT)
+ using LIFO(Last in first out)
+ - we can create the stack using Arrays(fixed or dynamic) or LinkedList
+ 
+ 
+ *****Queues*****
+ FIFO(First in first out)
+ - we can create the queues using Arrays(fixed or dynamic) or LinkedList
+ 
+ 
+
+
+*Two pointer/sliding window 
+*vectors
+*queues
+*trees   
+*graphs   
+
+

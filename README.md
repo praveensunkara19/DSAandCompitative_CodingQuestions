@@ -2,7 +2,7 @@
 
 This repository contains **Data Structures and Algorithms (DSA)** problems and **competitive programming practice questions**.  
 It is organized to help with interview preparation, coding contests, and strengthening core problem-solving skills.
-
+* please look into **src** of each folder for .java files. coz i have uploaded the runnable java files form Eclipse IDE.
 ## 📂 Repository Structure
 
 - **Data Structures and Algorithms** → Covers problems from:
